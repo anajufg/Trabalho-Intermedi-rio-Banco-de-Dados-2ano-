@@ -3,8 +3,8 @@
 [Resultado final](http://150.164.102.160/turma2024-integrado/303/a2023951555@teiacoltec.org/hp/TrabalhoSemana29/php-html/Login.php)
 
 OBS: 
-Usuário e senha para logar como administrador, respectivamente: AnaJu, ana
 
+Usuário e senha para logar como administrador, respectivamente: AnaJu, ana
 Usuário e senha para logar como gerente, respectivamente: Julia, julia
 
   1. Desenvolver as páginas de cadastro, login e edição utilizando HTML/CSS.
