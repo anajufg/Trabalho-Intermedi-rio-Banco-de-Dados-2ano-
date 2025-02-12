@@ -1,0 +1,285 @@
+/* Fonte de texto */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:wght@300..900&family=Ubuntu:wght@400;700&display=swap');
+
+body {
+    background: rgb(14, 14, 29);
+    margin: 0 auto;
+    font-family: "Noto Sans";
+}
+
+/* Todos os elementos vão ter */
+body * {
+    box-sizing: border-box;
+}
+
+.img {
+    width: 35vw;
+}
+
+a {
+    color: rgb(167, 111, 222);
+    font-weight: 800;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+a:hover {
+    color: rgb(255, 0, 64);
+    transition: 0.3s all;
+}
+
+/* Estilo geral para as páginas */
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex; /* Deixa as divs lado a lado */
+    justify-content: center; /* Deixa tudo no centro no eixo x */
+    align-items: center; /* Deixa tudo no centro no eixo y */
+}
+
+.esquerda, .direita {
+    width: 50vw;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilo dos cartões (Login e Administração) */
+.card, .cardAdm {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+    background: rgb(35, 35, 59);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgb(12, 12, 24);
+}
+
+h1 {
+    color: rgb(206, 164, 248);
+    font-weight: 800;
+    margin: 5px;
+    letter-spacing: 3px;
+}
+
+form {
+    width: 100%;
+}
+
+.usuario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.usuario > input, .usuario > select {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(61, 61, 97);
+    color: rgb(250, 245, 255);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px rgb(19, 19, 37);
+}
+
+.usuario > label {
+    color: rgb(250, 245, 255);
+    margin-bottom: 5px;
+}
+
+.usuario > input::placeholder, .usuario > select {
+    color: rgb(242, 233, 252);
+}
+
+.usuario > select {
+    appearance: none;
+}
+
+.botao {
+    width: 100%;
+    padding: 15px 0px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: rgb(199, 154, 243);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px rgb(19, 19, 37);
+}
+
+/* Estilo para a tabela */
+.table-container {
+    width: 100%;
+    max-height: 70vh; /* Altura máxima do contêiner da tabela */
+    overflow-y: auto; /* Rolagem vertical */
+    overflow-x: auto; /* Rolagem horizontal */
+}
+
+/* Estilos gerais da tabela */
+table {
+    background: rgb(35, 35, 59);
+    width: 100%;
+    border-collapse: collapse; /* Remove os espaços entre as células */
+    box-shadow: 0px 10px 40px rgb(12, 12, 24); /* Sombra das bordas */
+    color: rgb(250, 245, 255); /* Texto em branco */
+    font-family: "Noto Sans", sans-serif; /* Fonte padrão */
+    font-size: 12pt; /* Tamanho da fonte padrão */
+}
+
+/* Estilos do cabeçalho */
+table thead {
+    background: rgb(19, 19, 37); /* Fundo escuro */
+    color: rgb(206, 164, 248); /* Texto roxo claro */
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+/* Estilos das células de cabeçalho */
+thead th {
+    padding: 15px; /* Espaçamento interno */
+    text-align: left;
+}
+
+/* Estilos do corpo da tabela */
+tbody td {
+    padding: 10px; /* Menor espaçamento interno para manter compactação */
+    text-align: left;
+    font-size: 12pt; /* Tamanho de texto consistente com o restante */
+}
+
+/* Estilo para as linhas alternadas */
+tbody tr:nth-child(even) {
+    background-color: rgb(37, 37, 61); /* Alterna a cor de fundo das linhas */
+}
+
+.botao-grupo {
+    display: flex;
+    justify-content: flex-start; /* Alinha os botões à esquerda */
+    gap: 10px; /* Espaço entre os botões */
+}
+
+td a {
+    display: inline-block;
+    background: rgb(176, 135, 218); /* Cor de fundo similar aos botões */
+    color: white; /* Cor do texto branca */
+    padding: 10px 7px; /* Ajusta o espaço interno para parecer um botão */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Negrito */
+    font-size: 10pt; /* Tamanho da fonte */
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(19, 19, 37, 0.5); /* Sombra suave */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves */
+    margin: 2px 5px; /* Pequena margem entre os botões */
+    width: 106px; /* Largura fixa para uniformizar o tamanho dos botões */
+}
+
+/* Efeito hover para os links-botões */
+td a:hover {
+    background: rgb(255, 0, 64); /* Cor de fundo ao passar o mouse */
+    color: rgb(250, 245, 255); /* Cor do texto ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(19, 19, 37, 0.7); /* Sombra maior no hover */
+}
+
+/* Centraliza os botões e mantém alinhamento com as informações */
+td {
+    vertical-align: middle; /* Centraliza verticalmente as informações */
+    text-align: center;
+}
+
+/* Estilo dos avisos */
+.aviso {
+    width: 100%; 
+    margin-top: 5px; 
+    color: rgb(206, 164, 248);
+    font-weight: bold;
+    font-size: 15px; 
+    border: 1px solid rgb(206, 164, 248);
+    border-radius: 5px; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: center; 
+}
+
+/* Estilo do contêiner do botão de Sair */
+.logout-container {
+    position: fixed; /* Fixa o botão no topo */
+    top: 20px; /* Espaçamento do topo */
+    right: 20px; /* Espaçamento da direita */
+    z-index: 1000; /* Garante que esteja acima de outros elementos */
+}
+
+/* Estilo do botão de Sair */
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(176, 135, 218); /* Cor de fundo */
+    color: white; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    border-radius: 8px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    box-shadow: 0px 4px 10px rgba(19, 19, 37, 0.5); /* Sombra suave */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves */
+    width: 100px;
+    text-align: center;
+}
+
+/* Efeito hover no botão de Sair */
+.logout-button:hover {
+    background-color: rgb(255, 0, 64); /* Cor de fundo ao passar o mouse */
+    color: rgb(250, 245, 255); /* Cor do texto ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(19, 19, 37, 0.7); /* Sombra maior no hover */
+}
+
+/* Ajuste de responsividade */
+@media only screen and (max-width: 950px) {
+    table {
+        font-size: 10pt; /* Reduz o tamanho da fonte para telas menores */
+    }
+    
+    td a {
+        font-size: 9pt; /* Reduz o tamanho dos botões em telas menores */
+        padding: 6px 8px; /* Ajusta o padding dos botões */
+    }
+
+    .card, .cardAdm {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .esquerda, .direita {
+        width: 100%;
+        height: auto;
+    }
+
+    .img {
+        width: 70vw;
+    }
+
+    .card, .cardAdm {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .esquerda, .direita {
+        padding: 10px;
+    }
+}
