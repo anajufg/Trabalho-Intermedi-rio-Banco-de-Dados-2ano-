@@ -6,6 +6,7 @@ OBS: Usuário e senha para logar como administrador, respectivamente: AnaJu, ana
 
 Usuário e senha para logar como gerente, respectivamente: Julia, julia.
 
+
   1. Desenvolver as páginas de cadastro, login e edição utilizando HTML/CSS.
   2. Criar as páginas de processamento das informações e acesso aos dados utilizando PHP/PDO.
   3. O sistema deve implementar as seguintes funcionalidades:
