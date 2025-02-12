@@ -2,6 +2,15 @@
 
 [Resultado final](http://150.164.102.160/turma2024-integrado/303/a2023951555@teiacoltec.org/hp/TrabalhoSemana29/php-html/Login.php)
 
+OBS: 
+Usuário e senha para logar como administrador:
+Usuário: AnaJu
+Senha: ana
+
+Usuário e senha para logar como gerente:
+Usuário: Julia
+Senha: julia
+
   1. Desenvolver as páginas de cadastro, login e edição utilizando HTML/CSS.
   2. Criar as páginas de processamento das informações e acesso aos dados utilizando PHP/PDO.
   3. O sistema deve implementar as seguintes funcionalidades:
